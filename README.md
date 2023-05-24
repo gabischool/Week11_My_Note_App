@@ -22,8 +22,8 @@ Follow these steps to set up and work on your project:
 - [ ] **LOOK** at all the files you've been given for this project. One important folder to note is `server`. This folder contains an **API** that you are going to be interfacing with. Below is documentation on how to interact with the **API**.
 - [ ] **CHANGE** `cd` into `server` folder!
 - [ ] **RUN** `npm install` in the `server` folder.
-- [ ] **RUN** `npm start` to get your API up and running on `http://localhost:9000`. This is the **URL** you're going to need to use within your React app in order to make AJAX requests for data.
-- [ ] After your API is up and running, you can open chrome and type in `http://localhost:9000/notes`. You should see an Array `[]`. This is an array that your **API** will be using to store your notes data.
+- [ ] **RUN** `npm start` to get your API up and running on `http://localhost:9001`. This is the **URL** you're going to need to use within your React app in order to make AJAX requests for data.
+- [ ] After your API is up and running, you can open chrome and type in `http://localhost:9001/notes`. You should see an Array `[]`. This is an array that your **API** will be using to store your notes data.
 - [ ] Keep your server running while working on your project.
 
 Follow these steps for completing your project:
