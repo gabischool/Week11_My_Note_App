@@ -4,4 +4,20 @@
 
 body {
     background: rgba(37, 99, 235, 1);
+    overflow-x: hidden;
+}
+
+#box-note {
+    width: 18rem;
+}
+
+@media (max-width: 600px) {
+    #form-box {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    #box-note {
+        width: 16rem;
+    }
 }

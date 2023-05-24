@@ -31,7 +31,7 @@ const AddNote = (props) => {
   };
 
   return (
-    <div className="p-8 w-[60%] bg-white rounded ">
+    <div className="p-6 w-[60%] bg-white rounded" id="form-box">
      <Formik
        initialValues={initialValues}
        validationSchema={validationSchema}

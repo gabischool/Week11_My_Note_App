@@ -8,6 +8,7 @@ import axios from "axios";
 
 function App() {
   const [notes, setNotes] = useState([]);
+  const [newNotes , setNewNotes] = useState([]);
 
   useEffect(() => {
     // get all notes from localhost:9000/notes using axios
@@ -51,6 +52,8 @@ function App() {
 
   // STRETCH GOAL: Implement edit functionality
   // STRETCH GOAL: Isku day inaa edit ku sameyso notes-ka
+
+{/* waaxan isku daye qaabka hoose lkn wuu ishaqey waaye  */}
   // const editNote = (noteID) => {
   //   axios.put(`http://localhost:9002/update_note/${noteID}`)
   //   .then(res => {
@@ -61,6 +64,7 @@ function App() {
   //   })
 
   //   const updateNote = notes.filter((note) => note.id === noteID);
+  {/* useState oo aan usameye waaye */}
   //   setNewNotes(updateNote);
   // }
 
