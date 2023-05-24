@@ -8,18 +8,18 @@ function App() {
   const [notes, setNotes] = useState([]);
 
   useEffect(() => {
-    // get all notes from localhost:9001/notes using axios
-    // Dhamaan wixii notes ah kasoo jiido localhost:9001/notes adigoo axios isticmaalaayo
+    // get all notes from http://localhost:9000/notes using axios
+    // Dhamaan wixii notes ah kasoo jiido http://localhost:9000/notes adigoo axios isticmaalaayo
   }, []);
 
   const createNote = (noteData) => {
-    // Make API call to create a note (POST request to localhost:9001/create_note)
+    // Make API call to create a note (POST request to http://localhost:9000/create_note)
     // Halkaas ka samee note cusub adigoo POST request isticmaalaayo localhost:9001/create_note
   };
 
   const deleteNote = (id) => {
-    // Make API call to delete a note (DELETE request to localhost:9001/delete_note/:id)
-    // Halkaas ka tirtir note adigoo DELETE request isticmaalaayo localhost:9001/delete_note/:id
+    // Make API call to delete a note (DELETE request to http://localhost:9000/delete_note/:id)
+    // Halkaas ka tirtir note adigoo DELETE request isticmaalaayo http://localhost:9000/delete_note/:id
   };
 
   // STRETCH GOAL: Implement edit functionality
