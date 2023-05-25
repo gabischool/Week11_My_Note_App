@@ -13,7 +13,7 @@ function App() {
   useEffect(() => {
     // get all notes from localhost:9000/notes using axios
     // Dhamaan wixii notes ah kasoo jiido localhost:9000/notes adigoo axios isticmaalaayo
-    axios.get('http://localhost:9104/notes')
+    axios.get('http://localhost:9006/notes')
     .then(res => {
       setNotes(res.data);
       // console.log(res)
@@ -26,7 +26,7 @@ function App() {
   const createNote = (noteData) => {
     // Make API call to create a note (POST request to localhost:9000/create_note)
     // Halkaas ka samee note cusub adigoo POST request isticmaalaayo localhost:9000/create_note
-    axios.post('http://localhost:9104/create_note', noteData)
+    axios.post('http://localhost:9006/create_note', noteData)
     .then(res => {
       setNotes([res.data, ...notes]);
     })
