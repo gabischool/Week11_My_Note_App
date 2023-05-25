@@ -38,7 +38,7 @@ function App() {
   const deleteNote = (noteID) => {
     // Make API call to delete a note (DELETE request to localhost:9000/delete_note/:id)
     // Halkaas ka tirtir note adigoo DELETE request isticmaalaayo localhost:9000/delete_note/:id
-    axios.delete(`http://localhost:9104/delete_note/${noteID}`)
+    axios.delete(`http://localhost:9006/delete_note/${noteID}`)
      .then((res) => {
        console.log(res.data)
      })
