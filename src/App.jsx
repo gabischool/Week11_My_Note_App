@@ -13,7 +13,7 @@ function App() {
   useEffect(() => {
     // get all notes from localhost:9000/notes using axios
     // Dhamaan wixii notes ah kasoo jiido localhost:9000/notes adigoo axios isticmaalaayo
-    axios.get('http://localhost:9004/notes')
+    axios.get('http://localhost:9104/notes')
     .then(res => {
       setNotes(res.data);
       // console.log(res)
@@ -26,7 +26,7 @@ function App() {
   const createNote = (noteData) => {
     // Make API call to create a note (POST request to localhost:9000/create_note)
     // Halkaas ka samee note cusub adigoo POST request isticmaalaayo localhost:9000/create_note
-    axios.post('http://localhost:9004/create_note', noteData)
+    axios.post('http://localhost:9104/create_note', noteData)
     .then(res => {
       setNotes([res.data, ...notes]);
     })
@@ -38,7 +38,7 @@ function App() {
   const deleteNote = (noteID) => {
     // Make API call to delete a note (DELETE request to localhost:9000/delete_note/:id)
     // Halkaas ka tirtir note adigoo DELETE request isticmaalaayo localhost:9000/delete_note/:id
-    axios.delete(`http://localhost:9004/delete_note/${noteID}`)
+    axios.delete(`http://localhost:9104/delete_note/${noteID}`)
      .then((res) => {
        console.log(res.data)
      })
@@ -55,7 +55,7 @@ function App() {
 
 {/* waaxan isku daye qaabka hoose lkn wuu ishaqey waaye  */}
   // const editNote = (noteID) => {
-  //   axios.put(`http://localhost:9004/update_note/${noteID}`)
+  //   axios.put(`http://localhost:9104/update_note/${noteID}`)
   //   .then(res => {
   //     console.log(res.data);
   //   })
