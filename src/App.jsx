@@ -8,7 +8,8 @@ import axios from "axios";
 
 function App() {
   const [notes, setNotes] = useState([]);
-  const [newNotes , setNewNotes] = useState([]);
+  
+ /* const [newNotes , setNewNotes] = useState([]); */
 
   useEffect(() => {
     // get all notes from localhost:9000/notes using axios
