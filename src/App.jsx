@@ -14,7 +14,7 @@ function App() {
   useEffect(() => {
        axios.get('http://localhost:9000/notes')
       .then((res) => {
-        console.log([res.data])
+        // console.log(res.data)
       setNotes(res.data)
 })
    .catch((error)=>{
@@ -31,7 +31,7 @@ function App() {
     axios.post('http://localhost:9000/create_note', noteData)
     .then((resa)=>{
       // console.log(resa.data, ...notes)
-      setNotes([resa.data, ...notes])
+      setNotes([ ...notes,resa.data])
     })
   };
 
@@ -39,7 +39,7 @@ function App() {
      
     // Make API call to delete a note (DELETE request to localhost:9000/delete_note/:id)
     // Halkaas ka tirtir note adigoo DELETE request isticmaalaayo localhost:9000/delete_note/:id
-    axios.delete('http://localhost:9000/delete_note/${id}' , id)
+    axios.delete(`http://localhost:9000/delete_note/${id}`)
     .then((id)=>{
       const updateNotes = notes.filter((note) => note.id !==id  );
       setNotes(updateNotes, ...notes);
