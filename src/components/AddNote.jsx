@@ -69,7 +69,7 @@ const AddNote = (props) => {
               <button
                 type="submit"
                 className="mt-4 rounded w-full bg-amber-400 px-12 py-3 font-bold text-white hover:bg-orange-500">
-                Add Product
+                Add Note
               </button>
           </Form>
         </Formik>

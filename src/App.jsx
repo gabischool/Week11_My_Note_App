@@ -45,18 +45,18 @@ function App() {
   };
 
 
-  // const updateNote = (noteData) => {
-  //   axios.put(`http://localhost:9000/update_note/${noteData.id}`, noteData).then((res) => {
-  //     setNotes((notes) =>
-  //     notes.map((note) => {
-  //       return note.id === noteData.id ? res.data : note;
-  //     })
-  //   );
-  //   })
-  //   .catch((error) => {
-  //     console.log(error)
-  //   })
-  // };
+  const updateNote = (noteData) => {
+    axios.put(`http://localhost:9000/update_note/${noteData.id}`, noteData).then((res) => {
+      setNotes((notes) =>
+      notes.map((note) => {
+        return note.id === noteData.id ? res.data : note;
+      })
+    );
+    })
+    .catch((error) => {
+      console.log(error)
+    })
+  };
 
   // STRETCH GOAL: Implement edit functionality
   // STRETCH GOAL: Isku day inaa edit ku sameyso notes-ka
@@ -65,7 +65,7 @@ function App() {
     <div className="bg-blue-600 min-h-screen flex ">
       <div className="w-full overflow-x-hidden">
         <div className="flex flex-col items-center">
-          <h3 className="text-3xl text-white mb-5 mt-5">My Notes</h3>
+          <h3 className="text-3xl text-white mb-5 mt-5">Abdishakur's Notes</h3>
           { /* Add here all the components you need */ }
           <AddNote createNote={createNote}/>
           <Notes notes={notes} deleteNote={deleteNote} updateNote={updateNote}/>
